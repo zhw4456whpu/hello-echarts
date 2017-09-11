@@ -58,3 +58,7 @@ option = {
     }
 };
 
+$(function(){
+    var ec = echarts.init(document.getElementById('delaydisplaybar'));
+    ec.setOption(option);
+})
