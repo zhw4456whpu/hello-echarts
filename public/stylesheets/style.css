@@ -9,6 +9,13 @@ a {
 
 #delaydisplaybar
 {
-	width: 500px;
-	height: 300px;
+	width: 50%;
+	height: 500px;
+	float: left;
+}
+#multiYBar
+{
+	width: 50%;
+	height: 500px;
+	float: left;
 }
