@@ -10,9 +10,9 @@ mybOption = {
     title: {
         text: '多 Y 轴示例'
     },
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {
+    tooltip: {//提示框组件。可以设置在全局，即 tooltip；可以设置在坐标系中，即 grid.tooltip、polar.tooltip、single.tooltip；可以设置在系列中，即 series.tooltip；可以设置在系列的每个数据项中，即 series.data.tooltip
+        trigger: 'axis',//坐标轴触发，主要在柱状图，折线图等会使用类目轴的图表中使用。'none'什么都不触发。'item'数据项图形触发，主要在散点图，饼图等无类目轴的图表中使用。
+        axisPointer: {//坐标轴指示器配置项。实际上坐标轴指示器的全部功能，都可以通过轴上的 axisPointer 配置项完成（例如 xAxis.axisPointer 或 angleAxis.axisPointer）。但是使用 tooltip.axisPinter 在简单场景下会更方便一些。
             type: 'cross'
         }
     },
